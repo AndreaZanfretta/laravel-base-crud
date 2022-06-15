@@ -10228,6 +10228,11 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+main {
+  width: 100%;
+  height: calc(100vh - 110px);
+}
+
 /*!
  * Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)

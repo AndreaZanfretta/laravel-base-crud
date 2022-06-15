@@ -12,7 +12,7 @@
                 <img src="{{$comic->thumb}}" class="card-img-top" alt="{{$comic->title}}">
                 <div class="card-body">
                 <h5 class="card-title">{{$comic->title}}</h5>
-                <p class="card-text">{{$comic->description}}</p>
+                <p class="card-text">{{$comic->series}}</p>
                 <a href="{{route('comics.show', $comic->id)}}">Scopri di più</a>
                 </div>
             </div>
