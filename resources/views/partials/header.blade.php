@@ -1,9 +1,9 @@
 <header>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="{{asset('img/la-molisana-logo.svg')}}" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                Bootstrap
+            <a class="navbar-brand" href="{{route('home')}}">
+                <img src="{{asset('img/comic-logo.png')}}" alt="" width="60" height="24" class="d-inline-block align-text-top">
+                Comic Shop
               </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
