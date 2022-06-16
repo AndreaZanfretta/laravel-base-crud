@@ -13,7 +13,14 @@
                 <div class="card-body">
                 <h5 class="card-title">{{$comic->title}}</h5>
                 <p class="card-text">{{$comic->series}}</p>
-                <a href="{{route('comics.show', $comic->id)}}">Scopri di più</a>
+                <p class="card-text">{{$comic->type}}</p>
+                <a class="btn btn-info" href="{{route('comics.show', $comic->id)}}">Scopri di più</a>
+                <a href="{{route('comics.edit', $comic->id)}}" class="btn btn-warning">Modifica</a>
+                <form action="{{route('comics.destroy', $comic->id)}}" method="post">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="btn btn-danger">Cancella</button>
+                  </form>
                 </div>
             </div>
         </div>

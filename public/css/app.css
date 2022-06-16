@@ -10228,6 +10228,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.active {
+  color: black;
+}
+
 main {
   width: 100%;
   height: calc(100vh - 110px);
