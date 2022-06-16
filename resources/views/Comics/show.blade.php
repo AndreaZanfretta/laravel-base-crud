@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col flex-grow-0">
                 <div class="text-center">
-                    <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
+                    <img class="imgthumb" src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
                 </div>
             </div>
             <div class="col flex-grow-1">
