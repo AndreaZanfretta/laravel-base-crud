@@ -11,7 +11,7 @@
             <div class="card" style="width: 18rem;">
                 <img src="{{$comic->thumb}}" class="card-img-top" alt="{{$comic->title}}">
                 <div class="card-body">
-                <h5 class="card-title">{{$comic->title}}</h5>
+                <h5 id="del" class="card-title">{{$comic->title}}</h5>
                 <p class="card-text">{{$comic->series}}</p>
                 <p class="card-text">{{$comic->type}}</p>
                 <a class="btn btn-info" href="{{route('comics.show', $comic->id)}}">Scopri di più</a>
@@ -20,6 +20,7 @@
                     @csrf
                     @method('DELETE')
                     <button type="submit" id="delete" class="btn btn-danger">Cancella</button>
+                    <p id="demo"></p>
                   </form>
                 </div>
             </div>
